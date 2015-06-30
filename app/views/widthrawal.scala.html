@@ -1,0 +1,12 @@
+@* widthrawal Template File *@
+@(value: Double)
+
+ <form action="@routes.Application.subtractValue()" method="post">
+        <input name="value">
+        <input type="submit"><br>
+        Balance: @value 
+ </form>
+ 
+ <form action="@routes.Application.index()" method="get">
+     <input type="submit" value="Home">
+ </form>
